@@ -7,15 +7,18 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden pt-16"
+      className="relative min-h-screen flex items-center overflow-hidden pt-[84px]"
       style={{ backgroundColor: "var(--brand-red)" }}
     >
       {/* Background Image */}
       <motion.div
         className="absolute inset-0"
-        initial={{ scale: 1.08 }}
+        initial={{ scale: 1.12 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 1.6, ease: "easeOut" }}
+        transition={{
+          duration: 2.8,
+          ease: "easeOut",
+        }}
       >
         <Image
           src="/img/hero.png"
@@ -25,12 +28,12 @@ export default function Hero() {
           className="object-cover"
         />
 
-        {/* Soft Overlay */}
+        {/* Softer Overlay */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(196,22,28,0.65) 0%, rgba(196,22,28,0.55) 40%, rgba(196,22,28,0.3) 100%)",
+              "linear-gradient(90deg, rgba(196,22,28,0.55) 0%, rgba(196,22,28,0.45) 40%, rgba(196,22,28,0.25) 100%)",
           }}
         />
       </motion.div>
@@ -43,7 +46,10 @@ export default function Hero() {
         variants={{
           hidden: {},
           visible: {
-            transition: { staggerChildren: 0.15 },
+            transition: {
+              staggerChildren: 0.25,
+              delayChildren: 0.4,
+            },
           },
         }}
       >
@@ -56,8 +62,12 @@ export default function Hero() {
               color: "var(--text-brown)",
             }}
             variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 24 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.9, ease: "easeOut" },
+              },
             }}
           >
             Snack Delivery in Ibadan
@@ -67,8 +77,12 @@ export default function Hero() {
           <motion.h1
             className="text-4xl md:text-6xl font-extrabold leading-tight"
             variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 36 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1.1, ease: "easeOut" },
+              },
             }}
           >
             Fresh & Delicious Snacks,
@@ -82,8 +96,12 @@ export default function Hero() {
           <motion.p
             className="mt-6 text-lg md:text-xl text-white/90"
             variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 36 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1.1, ease: "easeOut" },
+              },
             }}
           >
             Enjoy hot meat pies, doughnuts, sausage rolls, egg buns, buns and
@@ -95,8 +113,12 @@ export default function Hero() {
           <motion.div
             className="mt-10 flex gap-5 flex-wrap"
             variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 36 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1.1, ease: "easeOut" },
+              },
             }}
           >
             <Link href="/snacks" className="btn-primary">
