@@ -26,7 +26,7 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function WhychooseUs() {
   return (
     <section className="py-24" style={{ backgroundColor: "var(--white)" }}>
       <div className="max-w-7xl mx-auto px-6 text-center">

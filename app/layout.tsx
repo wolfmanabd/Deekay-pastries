@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Deeekay Pastries | Snack Delivery in Ibadan",
+    default: "Deekay Pastries | Snack Delivery in Ibadan",
     template: "%s | Deeekay Pastries",
   },
   description:
-    "Deeekay Pastries offers fast and affordable snack delivery in Ibadan. Order meat pie, chin-chin, buns, cupcakes, and more with doorstep delivery.",
+    "Deekay Pastries offers fast and affordable snack delivery in Ibadan. Order meat pie, chin-chin, buns, cupcakes, and more with doorstep delivery.",
   keywords: [
     "Snack delivery in Ibadan",
     "Pastries in Ibadan",
