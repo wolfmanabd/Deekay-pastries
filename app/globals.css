@@ -1,42 +1,37 @@
 @import "tailwindcss";
 
 
-/* ===============================
-   Deeekay Paste ries Color System
-   =============================== */
+
+  /* Deeekay Paste ries Color System */
+
 
 :root {
   /* Primary Brand */
-  --brand-red: #C4161C;        /* main background */
-  --brand-red-dark: #8F0F13;   /* gradients / depth */
+  --brand-red: #C4161C;        
+  --brand-red-dark: #8F0F13;   
 
   /* Accent Colors */
-  --brand-yellow: #FFC233;     /* CTA buttons */
-  --brand-orange: #FF8C1A;     /* hover / secondary CTA */
+  --brand-yellow: #FFC233;    
+  --brand-orange: #FF8C1A;    
 
   /* Backgrounds */
-  --cream-bg: #FFF6EC;         /* sections */
+  --cream-bg: #FFF6EC;         
   --white: #FFFFFF;
+  --brand-cream: #FFF3E8;
 
   /* Text */
-  --text-brown: #3A1F0E;       /* headings */
-  --text-dark: #1F2937;        /* body text */
+  --text-brown: #3A1F0E;       
+  --text-dark: #1F2937;        
 
   --navbar-bg: #a31218;
 }
 
-/* =========================
-   BASE STYLES
-   ========================= */
+/* BASE STYLES */
 
 body {
   background-color: var(--white);
   color: var(--text-dark);
 }
-
-/* =========================
-   REUSABLE UI CLASSES
-   ========================= */
 
 .btn-primary {
   @apply px-8 py-4 rounded-lg font-bold transition;
@@ -60,7 +55,6 @@ body {
   color: var(--brand-red);
 }
 
-/* Section background helpers */
 .section-cream {
   background-color: var(--cream-bg);
 }
@@ -69,7 +63,6 @@ body {
   background-color: var(--brand-red);
 }
 
-/* Headings */
 .heading-primary {
   color: var(--text-brown);
 }
