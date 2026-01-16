@@ -104,7 +104,7 @@ export async function POST(req: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Deeekay Pastries <onboarding@resend.dev>",
+        from:"deekay-pastries.vercel.app" ,      // "Deeekay Pastries <onboarding@resend.dev>" //
         to: [process.env.ORDER_EMAIL],
         subject: `New Order from ${name}`,
         html: htmlContent,
