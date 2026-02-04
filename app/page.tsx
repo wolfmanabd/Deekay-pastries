@@ -4,7 +4,6 @@ import WhyChooseUs from "@/Components/WhychooseUs";
 import HowItWorks from "@/Components/HowItWorks";
 import Testimonials from "@/Components/Testimonials";
 import CTA from "@/Components/CTA";
-import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <CTA />
-      <Footer />
     </>
   );
 }

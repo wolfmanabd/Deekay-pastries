@@ -19,7 +19,7 @@ export default function SnacksPage() {
       <SnacksGrid />
 
       {/* CTA */}
-      <section className="bg-[var(--brand-red)] py-20 text-center text-white">
+      <section className="bg-[var(--brand-yellow)] py-20 text-center text-white">
         <h2 className="text-3xl md:text-4xl font-extrabold">
           Ready to Place an Order?
         </h2>
@@ -29,7 +29,7 @@ export default function SnacksPage() {
 
         <a
           href="https://wa.me/234XXXXXXXXXX"
-          className="inline-block mt-8 px-10 py-4 rounded-full bg-[var(--brand-yellow)] text-[var(--brand-red)] font-bold hover:scale-105 transition"
+          className="inline-block mt-8 px-10 py-4 rounded-full bg-[var(--brand-red)] text-white font-bold hover:scale-105 transition"
         >
           Order on WhatsApp
         </a>
